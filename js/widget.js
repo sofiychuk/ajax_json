@@ -4,7 +4,7 @@ window.onload = function () {
     }).appendTo('#employeeList');
 
     function getEmployee() {
-        var a = $.ajax({
+        $.ajax({
             url: "./data/employees.json",
             dataType: 'json',
             context: document.body
